@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1776 Defenders | Mission, Values & Business Information</title>
+  <meta name="description" content="1776 Defenders is a confidential support organization dedicated to crisis intervention, domestic violence prevention, Biblical counseling, and peer support. Learn about our mission, team, and services.">
+  <meta name="keywords" content="1776 Defenders, crisis support organization, domestic violence prevention, veteran support, Biblical counseling, peer support network, confidential services">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#06090d">
+  
+  <style>
+    /* Design System */
+    :root {
+      --mc-black: #06090d;
+      --mc-shadow: #0f131a;
+      --mc-charcoal: #171d26;
+      --mc-dark-drab: #202833;
+      --mc-edge-slate: #3b4756;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --ir-glow: #38bdf8;
+      --ir-glow-hover: #7dd3fc;
+      --alert-red: #ef4444;
+      --success-green: #34d399;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--mc-black);
+      background-image: 
+        radial-gradient(circle at 15% 25%, var(--mc-shadow) 0%, transparent 45%),
+        radial-gradient(circle at 80% 70%, var(--mc-charcoal) 0%, transparent 50%),
+        radial-gradient(circle at 45% 85%, var(--mc-dark-drab) 0%, transparent 40%),
+        linear-gradient(rgba(56, 189, 248, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56, 189, 248, 0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+      background-attachment: fixed;
+      color: var(--text-main);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: rgba(6, 9, 13, 0.95);
+      border-bottom: 1px solid var(--mc-edge-slate);
+      padding: 1rem;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-size: 1.3em;
+      font-weight: 800;
+      color: var(--ir-glow);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.15s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--ir-glow);
+    }
+
+    .nav-cta {
+      background-color: var(--ir-glow);
+      color: var(--mc-black);
+      padding: 0.5rem 1.2rem;
+      border-radius: 4px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+
+    .nav-cta:hover {
+      background-color: var(--ir-glow-hover);
+      transform: translateY(-1px);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 4rem 1rem;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin: 0 0 1rem 0;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      color: var(--text-muted);
+      margin: 0 0 2rem 0;
+      line-height: 1.8;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background-color: var(--ir-glow);
+      color: var(--mc-black);
+      padding: 0.9rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+      transition: all 0.15s ease;
+      font-family: inherit;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--ir-glow-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.3);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--ir-glow);
+      border: 2px solid var(--ir-glow);
+      padding: 0.8rem 1.8rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 1em;
+      transition: all 0.15s ease;
+      font-family: inherit;
+    }
+
+    .btn-secondary:hover {
+      background-color: rgba(56, 189, 248, 0.1);
+      border-color: var(--ir-glow-hover);
+      color: var(--ir-glow-hover);
+    }
+
+    /* Section Styles */
+    section {
+      padding: 3rem 1rem;
+      border-bottom: 1px solid var(--mc-edge-slate);
+    }
+
+    .section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin: 0 0 1.5rem 0;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    h3 {
+      font-size: 1.4em;
+      margin: 1.5rem 0 0.75rem 0;
+      font-weight: 700;
+      color: var(--ir-glow);
+    }
+
+    /* Mission & Values */
+    .mission-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .mission-card {
+      background-color: #0c1017;
+      border: 1px solid var(--mc-edge-slate);
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: all 0.15s ease;
+    }
+
+    .mission-card:hover {
+      border-color: var(--ir-glow);
+      box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
+    }
+
+    .mission-card h3 {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .mission-icon {
+      font-size: 1.8em;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .service-card {
+      background-color: #121824;
+      border: 1px solid var(--mc-edge-slate);
+      border-radius: 8px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .service-title {
+      font-weight: 700;
+      color: var(--ir-glow);
+      font-size: 1.1em;
+    }
+
+    .service-description {
+      font-size: 0.95em;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Team Section */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .team-member {
+      background-color: #0c1017;
+      border: 1px solid var(--mc-edge-slate);
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .member-avatar {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--ir-glow), var(--ir-glow-hover));
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    .member-name {
+      font-weight: 700;
+      font-size: 1.1em;
+      margin: 0 0 0.25rem 0;
+    }
+
+    .member-role {
+      color: var(--ir-glow);
+      font-size: 0.9em;
+      margin: 0 0 0.75rem 0;
+    }
+
+    .member-bio {
+      font-size: 0.9em;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Impact Stats */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .stat-card {
+      background-color: #0c1017;
+      border: 1px solid var(--mc-edge-slate);
+      border-radius: 8px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2.5em;
+      font-weight: 800;
+      color: var(--ir-glow);
+      margin: 0;
+    }
+
+    .stat-label {
+      color: var(--text-muted);
+      margin: 0.5rem 0 0 0;
+      font-size: 0.95em;
+    }
+
+    /* Contact CTA */
+    .contact-cta {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(52, 211, 153, 0.05));
+      border: 1px solid var(--mc-edge-slate);
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .contact-cta h3 {
+      margin-top: 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: rgba(6, 9, 13, 0.8);
+      border-top: 1px solid var(--mc-edge-slate);
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-section h4 {
+      margin: 0 0 1rem 0;
+      color: var(--ir-glow);
+      font-weight: 700;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-section li {
+      margin: 0.5rem 0;
+    }
+
+    .footer-section a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .footer-section a:hover {
+      color: var(--ir-glow);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--mc-edge-slate);
+      padding-top: 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9em;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.9em;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .hero-cta-group {
+        flex-direction: column;
+      }
+
+      .btn-primary, .btn-secondary {
+        width: 100%;
+      }
+
+      h2 {
+        font-size: 1.6em;
+      }
+
+      .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        padding: 0.75rem;
+      }
+
+      .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 2rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.5em;
+      }
+
+      .hero p {
+        font-size: 1em;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --mc-black: #f8f9fa;
+        --mc-shadow: #e9ecef;
+        --mc-charcoal: #dee2e6;
+        --mc-dark-drab: #ced4da;
+        --mc-edge-slate: #adb5bd;
+        --text-main: #212529;
+        --text-muted: #495057;
+        --ir-glow: #0d6efd;
+      }
+
+      nav {
+        background-color: rgba(248, 249, 250, 0.95);
+      }
+
+      .mission-card, .team-member, .stat-card {
+        background-color: #ffffff;
+      }
+
+      .service-card {
+        background-color: #f8f9fa;
+      }
+
+      footer {
+        background-color: rgba(248, 249, 250, 0.8);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-container">
+    <a href="/" class="nav-logo">1776 Defenders</a>
+    <ul class="nav-links">
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="index.html" class="nav-cta">Get Help Now</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>1776 Defenders</h1>
+  <p>A confidential organization dedicated to crisis intervention, domestic violence prevention, veteran reformation, and peer support through discreet Biblical counseling and immediate assistance.</p>
+  <div class="hero-cta-group">
+    <a href="index.html" class="btn-primary">🚨 Access Support Portal</a>
+    <a href="#services" class="btn-secondary">Learn About Us</a>
+  </div>
+</section>
+
+<!-- Mission Section -->
+<section id="mission">
+  <div class="section-container">
+    <h2>Our Mission & Values</h2>
+    <div class="mission-grid">
+      <div class="mission-card">
+        <h3><span class="mission-icon">🎯</span> Our Mission</h3>
+        <p>To provide confidential, rapid-response crisis support and domestic violence prevention services with dignity and compassion. We believe every person deserves immediate access to help without judgment or barriers.</p>
+      </div>
+      <div class="mission-card">
+        <h3><span class="mission-icon">🛡️</span> Confidentiality First</h3>
+        <p>Your privacy is paramount. All communications are treated with strict confidentiality. We never track identities or share information without explicit consent, ensuring your safety in seeking help.</p>
+      </div>
+      <div class="mission-card">
+        <h3><span class="mission-icon">❤️</span> Compassionate Care</h3>
+        <p>We meet people where they are—emotionally, spiritually, and practically. Our trained peer counselors provide Biblical guidance, practical resources, and genuine human connection during your darkest moments.</p>
+      </div>
+      <div class="mission-card">
+        <h3><span class="mission-icon">⚡</span> Immediate Response</h3>
+        <p>Crisis doesn't wait. Our 24/7 support network ensures you're never alone. Text, call, or chat—choose what feels safest for you and receive immediate assistance from caring advocates.</p>
+      </div>
+      <div class="mission-card">
+        <h3><span class="mission-icon">🤝</span> Community-Driven</h3>
+        <p>We're built by veterans, reformers, and survivors who understand trauma. Our peer support model creates connections with people who've walked similar paths and genuinely understand your struggle.</p>
+      </div>
+      <div class="mission-card">
+        <h3><span class="mission-icon">📖</span> Biblical Foundation</h3>
+        <p>Faith-centered support rooted in Biblical principles. Whether you're a believer seeking spiritual guidance or simply open to faith-based counsel, we provide hope through timeless wisdom and God's grace.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+  <div class="section-container">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-title">Crisis Intervention</div>
+        <div class="service-description">Immediate support for people experiencing suicidal thoughts, severe mental health crises, or acute emotional distress. Available 24/7 via text, phone, or chat.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-title">Domestic Violence Support</div>
+        <div class="service-description">Confidential resources, safety planning, shelter information, and emotional support for victims of domestic abuse. Discreet communication options for your safety.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-title">Biblical Counseling</div>
+        <div class="service-description">Faith-based guidance rooted in Scripture. Peer counselors trained in Biblical principles provide hope, wisdom, and spiritual encouragement during difficult seasons.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-title">Veteran Support</div>
+        <div class="service-description">Specialized support for military veterans, active duty personnel, and their families. Understanding military trauma and providing reformation-focused guidance.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-title">Peer Counseling</div>
+        <div class="service-description">Connect with trained peer advocates who've experienced similar struggles. Real people offering real support, accountability, and hope through personal testimony.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-title">Resource Navigation</div>
+        <div class="service-description">Access to comprehensive resource lists including shelters, legal aid, mental health services, and community support programs in your area.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section id="team">
+  <div class="section-container">
+    <h2>Our Team</h2>
+    <p>1776 Defenders is staffed by compassionate professionals and trained peer advocates—veterans, survivors, reformed individuals, and faith-based counselors dedicated to your support.</p>
+    <div class="team-grid">
+      <div class="team-member">
+        <div class="member-avatar">DC</div>
+        <div class="member-name">Director of Crisis Services</div>
+        <div class="member-role">Leadership</div>
+        <div class="member-bio">Oversees crisis intervention protocols, ensures 24/7 availability, and coordinates rapid response teams. Committed to excellence in emergency support.</div>
+      </div>
+      <div class="team-member">
+        <div class="member-avatar">PC</div>
+        <div class="member-name">Peer Counselor Network</div>
+        <div class="member-role">Front-Line Support</div>
+        <div class="member-bio">Trained peer advocates providing empathetic listening, practical guidance, and hope. Many are reformed individuals or survivors who understand your journey.</div>
+      </div>
+      <div class="team-member">
+        <div class="member-avatar">BC</div>
+        <div class="member-name">Biblical Counselors</div>
+        <div class="member-role">Faith-Based Support</div>
+        <div class="member-bio">Specialists in Scripture-based counsel, spiritual guidance, and faith-centered recovery. Available for those seeking Biblical wisdom and encouragement.</div>
+      </div>
+      <div class="team-member">
+        <div class="member-avatar">VS</div>
+        <div class="member-name">Veteran Specialists</div>
+        <div class="member-role">Military Support</div>
+        <div class="member-bio">Veterans and military family members trained in trauma-informed care. Understand the unique challenges of military service and PTSD recovery.</div>
+      </div>
+      <div class="team-member">
+        <div class="member-avatar">RM</div>
+        <div class="member-name">Resource Manager</div>
+        <div class="member-role">Coordination</div>
+        <div class="member-bio">Maintains comprehensive resource databases, coordinates with local organizations, and ensures you have access to practical help and services.</div>
+      </div>
+      <div class="team-member">
+        <div class="member-avatar">TC</div>
+        <div class="member-name">Technical Support</div>
+        <div class="member-role">Access & Security</div>
+        <div class="member-bio">Ensures secure, confidential communication channels. Maintains platforms and infrastructure so help is always accessible and private.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Impact Section -->
+<section id="impact">
+  <div class="section-container">
+    <h2>Our Impact</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Support Available</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">∞</div>
+        <div class="stat-label">Lives Matter to Us</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Confidential</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">0 Judgment</div>
+        <div class="stat-label">Zone Established</div>
+      </div>
+    </div>
+
+    <div class="contact-cta">
+      <h3>Ready to Make a Difference?</h3>
+      <p>Whether you need help, want to volunteer, or believe in our mission, there's a way to get involved. Join our community of hope.</p>
+      <a href="index.html" class="btn-primary">Access Support Portal</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Support Portal</a></li>
+        <li><a href="#mission">Our Mission</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Our Team</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Emergency Resources</h4>
+      <ul>
+        <li><a href="tel:988">988 - Suicide & Crisis Lifeline</a></li>
+        <li><a href="tel:18007997233">1-800-799-7233 - Domestic Violence Hotline</a></li>
+        <li><a href="tel:911">911 - Emergency Services</a></li>
+        <li><a href="sms:741741">Crisis Text Line (Text HELLO to 741741)</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:support@1776defenders.com">support@1776defenders.com</a></li>
+        <li><a href="index.html">Text Support</a></li>
+        <li><a href="index.html">Chat Support</a></li>
+        <li>Available 24/7</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 1776 Defenders. All rights reserved. Confidentiality and privacy are sacred trusts. <a href="#" style="color: var(--ir-glow);">Privacy Policy</a> | <a href="#" style="color: var(--ir-glow);">Terms of Service</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

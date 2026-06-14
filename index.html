@@ -263,6 +263,42 @@
       outline-offset: 2px;
     }
 
+    /* SOCIAL MEDIA LINKS */
+    .social-links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--mc-edge-slate);
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(56, 189, 248, 0.1);
+      border: 1px solid var(--mc-edge-slate);
+      border-radius: 50%;
+      color: var(--ir-glow);
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: all 0.15s ease;
+    }
+
+    .social-link:hover {
+      background-color: var(--ir-glow);
+      color: var(--mc-black);
+      transform: translateY(-2px);
+    }
+
+    .social-link:focus {
+      outline: 2px solid var(--ir-glow);
+      outline-offset: 2px;
+    }
+
     /* FLUID ACCESSIBILITY BAR PANEL */
     .accessibility-panel {
       background-color: #121824;
@@ -349,6 +385,11 @@
       .size-btn-group {
         width: 100%;
         justify-content: center;
+      }
+
+      .social-links {
+        margin-top: 1rem;
+        padding-top: 1rem;
       }
     }
 
@@ -441,8 +482,15 @@
     <div class="pipeline-links">
       <a href="mailto:support@1776defenders.com" title="Send an email to support team">Email</a>
       <a href="https://1776defenders.com/chat" title="Start a web chat session" target="_blank" rel="noopener noreferrer">Chat</a>
-      <a href="https://1776defenders.com/resources" title="View additional resources" target="_blank" rel="noopener noreferrer">Resources</a>
+      <a href="business.html" title="Learn about 1776 Defenders">About Us</a>
     </div>
+  </div>
+
+  <!-- SOCIAL MEDIA LINKS -->
+  <div class="social-links">
+    <a href="https://www.facebook.com/brandonhill" target="_blank" rel="noopener noreferrer" class="social-link" title="Follow us on Facebook" aria-label="Facebook">f</a>
+    <a href="https://www.instagram.com/brandonhill" target="_blank" rel="noopener noreferrer" class="social-link" title="Follow us on Instagram" aria-label="Instagram">📷</a>
+    <a href="https://www.youtube.com/brandonhill" target="_blank" rel="noopener noreferrer" class="social-link" title="Subscribe on YouTube" aria-label="YouTube">▶</a>
   </div>
 
   <!-- FLUID ACCESSIBILITY BAR PANEL -->

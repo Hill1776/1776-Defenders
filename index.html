@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- System Performance Properties -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- CRITICAL GOOGLE SEARCH ENGINE META TAGS -->
+  <title>1776 Defenders | Secure Crisis, Domestic Violence & SMS Support Link</title>
+  <meta name="description" content="Official 1776 Defenders mobile-friendly communication hub. Rapid response links for crisis support, domestic violence shelter routes, suicide prevention assets, and discreet Biblical counseling.">
+  <meta name="keywords" content="1776 Defenders, domestic violence emergency support, veteran reformation, suicide prevention hotline, Biblical advice help line, text silently, peer support network">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#06090d">
+  
+  <style>
+    /* User-Centric Tactical Design System */
+    :root {
+      --mc-black: #06090d;       /* Deep matte black background */
+      --mc-shadow: #0f131a;      /* Camouflage element 1 */
+      --mc-charcoal: #171d26;    /* Camouflage element 2 */
+      --mc-dark-drab: #202833;   /* Camouflage element 3 */
+      --mc-edge-slate: #3b4756;  /* High-contrast panel border */
+      
+      /* UI Functional Elements */
+      --text-main: #f1f5f9;      /* Ultra-bright off-white for effortless reading */
+      --text-muted: #94a3b8;     /* Medium gray for guidance text */
+      --ir-glow: #38bdf8;        /* Highly visible interactive Cyan */
+      --ir-glow-hover: #7dd3fc;  /* Bright active focus states */
+      --alert-red: #ef4444;      /* High-visibility distress signal red */
+      --success-green: #34d399;  /* Crisp contrast green */
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--mc-black);
+      /* Balanced Multicam Texture with Grid Lines */
+      background-image: 
+        radial-gradient(circle at 15% 25%, var(--mc-shadow) 0%, transparent 45%),
+        radial-gradient(circle at 80% 70%, var(--mc-charcoal) 0%, transparent 50%),
+        radial-gradient(circle at 45% 85%, var(--mc-dark-drab) 0%, transparent 40%),
+        linear-gradient(rgba(56, 189, 248, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56, 189, 248, 0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+      background-attachment: fixed;
+      color: var(--text-main);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 1.5rem 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* GLOBAL FONT ACCESSIBILITY SCALING CLASSES */
+    body.font-large { font-size: 1.15rem; }
+    body.font-xlarge { font-size: 1.3rem; }
+
+    #sms-hub-section {
+      background-color: #0c1017;
+      border: 2px solid var(--mc-edge-slate);
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      position: relative;
+    }
+
+    /* Tactical HUD visual corner styling offsets */
+    .hud-corner {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-color: var(--ir-glow);
+      border-style: solid;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    .top-left { top: 8px; left: 8px; border-width: 2px 0 0 2px; }
+    .top-right { top: 8px; right: 8px; border-width: 2px 2px 0 0; }
+    .bottom-left { bottom: 8px; left: 8px; border-width: 0 0 2px 2px; }
+    .bottom-right { bottom: 8px; right: 8px; border-width: 0 2px 2px 0; }
+
+    .portal-header {
+      border-bottom: 1px solid var(--mc-edge-slate);
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .portal-header h1 {
+      margin: 0;
+      font-size: 1.7em;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: var(--text-main);
+    }
+
+    .portal-subtitle {
+      font-size: 0.8em;
+      color: var(--ir-glow);
+      margin-top: 0.35rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .instruction-text {
+      font-size: 0.95em;
+      color: var(--text-main);
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .sms-channels-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .sms-channel-card {
+      background-color: #121824;
+      border: 1px solid var(--mc-edge-slate);
+      border-radius: 8px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .channel-title {
+      font-size: 0.8em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      border-left: 3px solid var(--alert-red);
+      padding-left: 0.5rem;
+      line-height: 1;
+    }
+
+    /* MASTER SILENT TEXT TRIGGERS */
+    .action-sms-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--ir-glow);
+      color: #06090d;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 0.9rem 1.5rem;
+      border-radius: 6px;
+      width: 100%;
+      box-sizing: border-box;
+      transition: all 0.15s ease-in-out;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      box-shadow: 0 4px 14px rgba(56, 189, 248, 0.2);
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .action-sms-button:hover {
+      background-color: var(--ir-glow-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.35);
+    }
+
+    .action-sms-button:active {
+      transform: translateY(0);
+    }
+
+    .action-sms-button:focus {
+      outline: 2px solid var(--ir-glow);
+      outline-offset: 2px;
+    }
+
+    /* BACKUP PHONE CONNECTOR ACTIONS */
+    .action-call-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      color: var(--text-muted);
+      border: 1px dashed var(--mc-edge-slate);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9em;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      width: 100%;
+      box-sizing: border-box;
+      transition: all 0.15s ease;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .action-call-link:hover {
+      background-color: rgba(239, 68, 68, 0.08);
+      border-color: var(--alert-red);
+      color: var(--text-main);
+    }
+
+    .action-call-link:focus {
+      outline: 2px solid var(--ir-glow);
+      outline-offset: 2px;
+    }
+
+    /* BACKUP DIGITAL EMAIL PIPELINES */
+    .email-pipeline-box {
+      margin-top: 1.5rem;
+      background-color: rgba(6, 9, 13, 0.5);
+      border: 1px solid var(--mc-edge-slate);
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      font-size: 0.85em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pipeline-label {
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 0.9em;
+    }
+
+    .pipeline-links { 
+      display: flex; 
+      gap: 10px; 
+      flex-wrap: wrap;
+    }
+
+    .pipeline-links a, .pipeline-links button {
+      color: var(--ir-glow);
+      text-decoration: none;
+      background: none;
+      border: none;
+      padding: 0;
+      font-family: inherit;
+      font-size: 1em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .pipeline-links a:hover, .pipeline-links button:hover { 
+      text-decoration: underline;
+      color: var(--ir-glow-hover);
+    }
+
+    .pipeline-links a:focus, .pipeline-links button:focus {
+      outline: 2px solid var(--ir-glow);
+      outline-offset: 2px;
+    }
+
+    /* FLUID ACCESSIBILITY BAR PANEL */
+    .accessibility-panel {
+      background-color: #121824;
+      border: 1px solid var(--mc-edge-slate);
+      border-radius: 6px;
+      padding: 0.75rem;
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .accessibility-label {
+      font-size: 0.8em;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--ir-glow);
+      text-transform: uppercase;
+    }
+
+    .size-btn-group { 
+      display: flex; 
+      gap: 6px;
+    }
+
+    .size-btn {
+      background-color: var(--mc-dark-drab);
+      border: 1px solid var(--mc-edge-slate);
+      color: var(--text-main);
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8em;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.15s ease;
+    }
+
+    .size-btn:hover { 
+      border-color: var(--ir-glow); 
+      color: var(--ir-glow); 
+    }
+
+    .size-btn:focus {
+      outline: 2px solid var(--ir-glow);
+      outline-offset: 2px;
+    }
+
+    .size-btn.active { 
+      background-color: var(--ir-glow); 
+      color: #06090d; 
+      border-color: var(--ir-glow); 
+    }
+
+    .system-footer-disclaimer {
+      text-align: center;
+      font-size: 0.75em;
+      color: var(--text-muted);
+      margin-top: 1.5rem;
+      line-height: 1.5;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 480px) {
+      #sms-hub-section {
+        padding: 1.5rem 1rem;
+      }
+
+      .portal-header h1 {
+        font-size: 1.5em;
+      }
+
+      .instruction-text {
+        font-size: 0.9em;
+      }
+
+      .accessibility-panel {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .size-btn-group {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --mc-black: #f8f9fa;
+        --mc-shadow: #e9ecef;
+        --mc-charcoal: #dee2e6;
+        --mc-dark-drab: #ced4da;
+        --mc-edge-slate: #adb5bd;
+        --text-main: #212529;
+        --text-muted: #495057;
+        --ir-glow: #0d6efd;
+      }
+
+      #sms-hub-section {
+        background-color: #ffffff;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+      }
+
+      .sms-channel-card {
+        background-color: #f8f9fa;
+      }
+
+      .accessibility-panel {
+        background-color: #f8f9fa;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section id="sms-hub-section">
+  <!-- Decorative HUD notches hidden from screen readers -->
+  <div class="hud-corner top-left" aria-hidden="true"></div>
+  <div class="hud-corner top-right" aria-hidden="true"></div>
+  <div class="hud-corner bottom-left" aria-hidden="true"></div>
+  <div class="hud-corner bottom-right" aria-hidden="true"></div>
+
+  <div class="portal-header">
+    <h1>1776 Defenders</h1>
+    <div class="portal-subtitle">Discreet Support Line</div>
+  </div>
+
+  <p class="instruction-text">
+    If you are experiencing domestic violence, facing crisis/suicide thoughts, require confidential Biblical guidance, or simply need an immediate person to talk to—tap a <strong>"Text Silently"</strong> link below to launch an encrypted SMS text buffer.
+  </p>
+  
+  <div class="sms-channels-wrapper">
+    <!-- FIELD CONTAINER BLOCK 1 -->
+    <div class="sms-channel-card">
+      <div class="channel-title">Primary Support Link</div>
+      <a href="sms:+18706549058?body=I%20need%20secure%20assistance.%20Please%20respond%20via%20text." class="action-sms-button" title="Launch instant silent text message to primary support line">💬 Text Silently</a>
+      <a href="tel:+18706549058" class="action-call-link" title="Initiate a direct voice call to primary support line">📞 Or Call (870) 654-9058</a>
+    </div>
+    
+    <!-- FIELD CONTAINER BLOCK 2 -->
+    <div class="sms-channel-card">
+      <div class="channel-title">Secondary Support Link</div>
+      <a href="sms:+18706546186?body=I%20need%20secure%20assistance.%20Please%20respond%20via%20text." class="action-sms-button" title="Launch instant silent text message to secondary support line">💬 Text Silently</a>
+      <a href="tel:+18706546186" class="action-call-link" title="Initiate a direct voice call to secondary support line">📞 Or Call (870) 654-6186</a>
+    </div>
+
+    <!-- FIELD CONTAINER BLOCK 3 -->
+    <div class="sms-channel-card">
+      <div class="channel-title">National Crisis Hotline</div>
+      <a href="sms:741741?body=HELLO" class="action-sms-button" title="Launch text to Crisis Text Line">💬 Text Silently</a>
+      <a href="tel:988" class="action-call-link" title="Call the Suicide & Crisis Lifeline">📞 Or Call 988 (24/7)</a>
+    </div>
+
+    <!-- FIELD CONTAINER BLOCK 4 -->
+    <div class="sms-channel-card">
+      <div class="channel-title">Domestic Violence Hotline</div>
+      <a href="sms:+18007997233?body=HELP" class="action-sms-button" title="Launch text to National DV Hotline">💬 Text Silently</a>
+      <a href="tel:+18007997233" class="action-call-link" title="Call the National Domestic Violence Hotline">📞 Or Call 1-800-799-7233</a>
+    </div>
+  </div>
+
+  <!-- BACKUP DIGITAL EMAIL PIPELINES -->
+  <div class="email-pipeline-box">
+    <span class="pipeline-label">Additional Resources:</span>
+    <div class="pipeline-links">
+      <a href="mailto:support@1776defenders.com" title="Send an email to support team">Email</a>
+      <a href="https://1776defenders.com/chat" title="Start a web chat session" target="_blank" rel="noopener noreferrer">Chat</a>
+      <a href="https://1776defenders.com/resources" title="View additional resources" target="_blank" rel="noopener noreferrer">Resources</a>
+    </div>
+  </div>
+
+  <!-- FLUID ACCESSIBILITY BAR PANEL -->
+  <div class="accessibility-panel">
+    <span class="accessibility-label">Text Size:</span>
+    <div class="size-btn-group">
+      <button class="size-btn active" onclick="setFontSize('normal')" aria-label="Normal text size">A</button>
+      <button class="size-btn" onclick="setFontSize('large')" aria-label="Large text size">A+</button>
+      <button class="size-btn" onclick="setFontSize('xlarge')" aria-label="Extra large text size">A++</button>
+    </div>
+  </div>
+
+  <!-- SYSTEM FOOTER DISCLAIMER -->
+  <div class="system-footer-disclaimer">
+    <strong>DISCLAIMER:</strong> This is a crisis support gateway. All communications are treated with strict confidentiality. If you are in immediate danger, please call emergency services (911 in the United States) or go to your nearest emergency room.
+  </div>
+</section>
+
+<script>
+  // Accessibility font size management
+  function setFontSize(size) {
+    const body = document.body;
+    const buttons = document.querySelectorAll('.size-btn');
+    
+    // Remove all font size classes
+    body.classList.remove('font-large', 'font-xlarge');
+    
+    // Remove active class from all buttons
+    buttons.forEach(btn => btn.classList.remove('active'));
+    
+    // Add appropriate class based on selection
+    const activeBtn = event.target;
+    activeBtn.classList.add('active');
+    
+    if (size === 'large') {
+      body.classList.add('font-large');
+    } else if (size === 'xlarge') {
+      body.classList.add('font-xlarge');
+    }
+
+    // Save preference to localStorage
+    localStorage.setItem('1776-font-size', size);
+  }
+
+  // Load saved font size preference on page load
+  document.addEventListener('DOMContentLoaded', function() {
+    const savedSize = localStorage.getItem('1776-font-size') || 'normal';
+    const buttons = document.querySelectorAll('.size-btn');
+    const body = document.body;
+
+    if (savedSize !== 'normal') {
+      body.classList.add('font-' + savedSize);
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      const indexMap = { 'normal': 0, 'large': 1, 'xlarge': 2 };
+      if (buttons[indexMap[savedSize]]) {
+        buttons[indexMap[savedSize]].classList.add('active');
+      }
+    }
+  });
+
+  // Improve touch targets on mobile
+  if (window.innerWidth <= 480) {
+    const buttons = document.querySelectorAll('.action-sms-button, .action-call-link');
+    buttons.forEach(btn => {
+      btn.style.minHeight = '48px';
+    });
+  }
+</script>
+
+</body>
+</html>
